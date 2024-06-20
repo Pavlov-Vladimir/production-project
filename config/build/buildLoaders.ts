@@ -27,7 +27,7 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
                 presets: ['@babel/preset-env']
             }
         }
-    }
+    };
 
     const typescriptLoader = {
         test: /\.tsx?$/,
@@ -60,5 +60,5 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
         babelLoader,
         typescriptLoader,
         cssLoader,
-    ]
+    ];
 }
