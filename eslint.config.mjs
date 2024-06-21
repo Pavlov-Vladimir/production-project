@@ -4,6 +4,7 @@ import tseslint from "typescript-eslint";
 import pluginReactConfig from "eslint-plugin-react/configs/recommended.js";
 import { fixupConfigRules } from "@eslint/compat";
 import jsxA11y from 'eslint-plugin-jsx-a11y';
+import i18next from 'eslint-plugin-i18next';
 
 
 export default [
@@ -15,7 +16,7 @@ export default [
   {
     files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
     plugins: {
-      'jsx-a11y': jsxA11y,
+      'jsx-a11y': jsxA11y
     },
     rules: {
       semi: 2,
@@ -26,7 +27,7 @@ export default [
       'react/react-in-jsx-scope': 'off',
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
       'no-unused-vars': 1,
-      '@typescript-eslint/no-unused-vars': 1
+      '@typescript-eslint/no-unused-vars': 1,
     }
   },
 ];
