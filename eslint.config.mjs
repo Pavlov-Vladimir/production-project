@@ -8,15 +8,26 @@ import i18next from 'eslint-plugin-i18next';
 
 
 export default [
-  { languageOptions: { parserOptions: { ecmaFeatures: { jsx: true } } } },
-  {languageOptions: { globals: globals.browser }},
+  {
+    languageOptions: {
+      parserOptions: {
+        ecmaFeatures: { jsx: true }
+      }
+    }
+  },
+  {
+    languageOptions: {
+      globals: globals.browser
+    }
+  },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   ...fixupConfigRules(pluginReactConfig),
   {
     files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
     plugins: {
-      'jsx-a11y': jsxA11y
+      'jsx-a11y': jsxA11y,
+      'i18next': i18next
     },
     rules: {
       semi: 2,
@@ -28,6 +39,18 @@ export default [
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
       'no-unused-vars': 1,
       '@typescript-eslint/no-unused-vars': 1,
-    }
+      // 'i18next/no-literal-string': [
+      //     2,
+      //   {
+      //     markupOnly: true,
+      //     ignoreAttribute: ['data-testid']
+      //   }
+      // ]
+    },
+    languageOptions: {
+      globals: {
+        __IS_DEV__: true,
+      }
+    },
   },
 ];
