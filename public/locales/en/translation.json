@@ -3,5 +3,8 @@
   "Translate": "Translate",
   "Main Page": "Main Page",
   "Lang": "EN",
-  "Page Not Found": "Page Not Found"
+  "Page Not Found": "Page Not Found",
+  "An unexpected error occurred": "An unexpected error occurred",
+  "Reload Page": "Reload Page",
+  "Throw Error": "Throw Error"
 }
