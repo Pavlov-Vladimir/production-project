@@ -1,5 +1,5 @@
-import {render, screen} from "@testing-library/react";
-import {Button, ButtonTheme} from "shared/ui/Button";
+import { render, screen } from "@testing-library/react";
+import { Button, ButtonTheme } from "shared/ui/Button";
 
 describe('Button', () => {
     const text: string = 'TEST';

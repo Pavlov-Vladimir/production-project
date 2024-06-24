@@ -39,18 +39,20 @@ export default [
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
       'no-unused-vars': 1,
       '@typescript-eslint/no-unused-vars': 1,
+      'object-curly-spacing': ["error", "always"],
+      'max-len': ['error', { ignoreComments: true, code: 120 }],
       // 'i18next/no-literal-string': [
       //     2,
       //   {
       //     markupOnly: true,
-      //     ignoreAttribute: ['data-testid']
+      //     ignoreAttribute: ['data-testid', 'to']
       //   }
       // ]
     },
     languageOptions: {
       globals: {
         __IS_DEV__: true,
-      }
+      },
     },
   },
 ];
