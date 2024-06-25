@@ -7,10 +7,6 @@
     transition: width 0.3s ease-in-out;
 }
 
-.collapsed {
-    width: var(--sidebar-width-collapsed);
-}
-
 .switchers {
     position: absolute;
     bottom: 20px;
@@ -19,8 +15,49 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+}
 
-    .collapsed & {
+.collapsedBtn {
+    position: absolute;
+    right: -32px;
+    bottom: 32px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 16px;
+    padding-left: 30px;
+}
+
+.item {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    width: fit-content;
+}
+
+.icon {
+    fill: var(--inverted-primary-color);
+}
+
+.link {
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+    height: var(--line-height-m);
+}
+
+.collapsed {
+    width: var(--sidebar-width-collapsed);
+
+    .link {
+        opacity: 0;
+        width: 0;
+        text-wrap: nowrap;
+    }
+
+    .switchers {
         flex-direction: column;
         gap: 10px;
     }
