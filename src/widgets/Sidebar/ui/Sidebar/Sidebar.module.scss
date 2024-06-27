@@ -43,9 +43,11 @@
 }
 
 .link {
-    transition: all 0.2s ease-in-out;
+    transition: opacity 0.3s, transform 0.3s;
     opacity: 1;
+    transform: translateX(0);
     height: var(--line-height-m);
+    text-wrap: nowrap;
 }
 
 .collapsed {
@@ -53,8 +55,7 @@
 
     .link {
         opacity: 0;
-        width: 0;
-        text-wrap: nowrap;
+        transform: translateX(-70%);
     }
 
     .switchers {

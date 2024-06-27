@@ -5,6 +5,7 @@ import pluginReactConfig from "eslint-plugin-react/configs/recommended.js";
 import { fixupConfigRules } from "@eslint/compat";
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import i18next from 'eslint-plugin-i18next';
+import reactHooks from 'eslint-plugin-react-hooks';
 
 
 export default [
@@ -27,7 +28,8 @@ export default [
     files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
     plugins: {
       'jsx-a11y': jsxA11y,
-      'i18next': i18next
+      'i18next': i18next,
+      'react-hooks': reactHooks,
     },
     rules: {
       semi: 2,
@@ -41,6 +43,8 @@ export default [
       '@typescript-eslint/no-unused-vars': 1,
       'object-curly-spacing': ["error", "always"],
       'max-len': ['error', { ignoreComments: true, code: 120 }],
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "error",
       // 'i18next/no-literal-string': [
       //     2,
       //   {
@@ -55,4 +59,10 @@ export default [
       },
     },
   },
+  {
+    files: ["**/src/**/*.{test,stories}.{ts,tsx,jsx}"],
+    rules: {
+      'max-len': "off",
+    }
+  }
 ];
