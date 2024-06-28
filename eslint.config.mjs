@@ -39,6 +39,7 @@ export default [
       'jsx-a11y/alt-text': 2,
       'react/react-in-jsx-scope': 'off',
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+      'no-undef': 1,
       'no-unused-vars': 1,
       '@typescript-eslint/no-unused-vars': 1,
       'object-curly-spacing': ["error", "always"],
@@ -63,6 +64,12 @@ export default [
     files: ["**/src/**/*.{test,stories}.{ts,tsx,jsx}"],
     rules: {
       'max-len': "off",
+    }
+  },
+  {
+    files: ["**/index.{ts,js}"],
+    rules: {
+      "@typescript-eslint/no-var-requires": "off"
     }
   }
 ];
