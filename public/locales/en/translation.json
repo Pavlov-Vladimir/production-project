@@ -8,5 +8,7 @@
   "Reload Page": "Reload Page",
   "Throw Error": "Throw Error",
   "Main": "Main",
-  "About": "About"
+  "About": "About",
+  "increment": "increment",
+  "decrement": "decrement"
 }

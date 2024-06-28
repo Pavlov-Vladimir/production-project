@@ -1,8 +1,8 @@
 import { classNames } from "shared/lib/classNames/classNames";
 import cls from './Modal.module.scss';
 import React, { ReactNode, useCallback, useEffect, useRef, useState } from "react";
-import { Portal } from "shared/ui/Portal/ui/Portal";
 import { useTheme } from "app/providers/ThemeProvider";
+import { Portal } from "shared/ui/Portal";
 
 interface ModalProps {
     className?: string;
