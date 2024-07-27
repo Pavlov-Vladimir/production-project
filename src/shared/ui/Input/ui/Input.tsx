@@ -32,6 +32,7 @@ export const Input = memo(function Input(props: InputProps) {
         if (autofocus) {
             setIsFocused(true);
             ref.current?.focus();
+            setCaretPosition(ref.current?.value.length * SYMBOL_WIDTH);
         }
     }, [autofocus]);
 
@@ -77,7 +78,6 @@ export const Input = memo(function Input(props: InputProps) {
                     />
                 }
             </div>
-
         </div>
     );
 });
