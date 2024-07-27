@@ -46,6 +46,7 @@ export default [
       'max-len': ['error', { ignoreComments: true, code: 120 }],
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "error",
+      "@typescript-eslint/no-explicit-any": "off"
       // 'i18next/no-literal-string': [
       //     2,
       //   {

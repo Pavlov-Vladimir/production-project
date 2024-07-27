@@ -10,5 +10,8 @@
   "Main": "Главная",
   "About": "О сайте",
   "increment": "инкремент",
-  "decrement": "декремент"
+  "decrement": "декремент",
+  "Login": "Войти",
+  "Input username": "Введите имя",
+  "Input password": "Введите пароль"
 }

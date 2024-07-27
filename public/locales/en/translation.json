@@ -10,5 +10,8 @@
   "Main": "Main",
   "About": "About",
   "increment": "increment",
-  "decrement": "decrement"
+  "decrement": "decrement",
+  "Login": "Login",
+  "Input username": "Input username",
+  "Input password": "Input password"
 }
