@@ -13,5 +13,7 @@
   "decrement": "декремент",
   "Login": "Войти",
   "Input username": "Введите имя",
-  "Input password": "Введите пароль"
+  "Input password": "Введите пароль",
+  "Login Form": "Форма авторизации",
+  "Invalid username or password": "Неверный логин или пароль"
 }

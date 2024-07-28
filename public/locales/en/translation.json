@@ -13,5 +13,7 @@
   "decrement": "decrement",
   "Login": "Login",
   "Input username": "Input username",
-  "Input password": "Input password"
+  "Input password": "Input password",
+  "Login Form": "Login Form",
+  "Invalid username or password": "Invalid username or password"
 }
